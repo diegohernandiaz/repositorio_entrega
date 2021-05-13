@@ -1,0 +1,249 @@
+@charset "UTF-8";
+* {
+  font-family: 'Big Shoulders Display', cursive;
+  margin: 0;
+}
+
+#grilla {
+  display: -ms-grid;
+  display: grid;
+  height: 1000px;
+  -ms-grid-rows: 15% 5% 70% 10%;
+      grid-template-rows: 15% 5% 70% 10%;
+      grid-template-areas: ¨header¨  ¨nav¨ ¨section¨ ¨footer¨;
+}
+
+.grillaHeader {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grillaMenu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.grillaSection {
+  width: 100%;
+  height: 100%;
+}
+
+.grillaSection {
+  background-image: url(../imagenes/drums-2089829_1920.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.bemSectionLic2 {
+  background-image: url(../imagenes/piano-3587922_1280.jpg);
+  background-size: 100%;
+  color: white;
+}
+
+.tablaContacto {
+  padding-left: 30px;
+}
+
+.grillaSection .grillaLicencias table {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  #grilla {
+    -ms-grid-rows: 20% 20% 55% 5%;
+        grid-template-rows: 20% 20% 55% 5%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .grillaMenu {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #grilla {
+    -ms-grid-rows: 10% 25% 55% 10%;
+        grid-template-rows: 10% 25% 55% 10%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #grilla {
+    -ms-grid-rows: 8% 20% 56% 14%;
+        grid-template-rows: 8% 20% 56% 14%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .grillaMenu {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+}
+
+.bemHeader {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bemNav {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dbd5d4;
+}
+
+.bemNav__item {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+}
+
+.grillaLicencias {
+  text-align: center;
+}
+
+.bemSection__titulo {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.bemSectionLic {
+  margin: auto;
+}
+
+.bemSection__tabla {
+  margin: auto;
+  background-image: url(../imagenes/guitar-3757612_640.jpg);
+}
+
+.bemSection__contact {
+  background-color: yellow;
+  color: white;
+}
+
+.bemFooter {
+  background-color: #dad8d8;
+}
+
+.bemFooter__form {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+
+.bemServiciosSection {
+  background-image: url(../imagenes/bass-3657617_1920.jpg);
+  background-size: cover;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.bemServiciosSection__titulo {
+  background-color: black;
+  color: white;
+  font-size: 50px;
+}
+
+.bemServiciosSection__item--uno {
+  color: white;
+  font-size: 25px;
+}
+
+.bemServiciosSection__item--dos {
+  color: white;
+  font-size: 25px;
+}
+
+.bemServiciosSection__item--tres {
+  color: white;
+  font-size: 25px;
+}
+
+.bemServiciosSection__item--cuatro {
+  color: white;
+  font-size: 25px;
+}
+
+.bemForm {
+  background-image: url(../imagenes/stage-2089831_1920.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+}
+
+.bemForm__titulo {
+  background-color: black;
+  font-size: 50px;
+  text-align: center;
+}
+
+.bemForm__item {
+  font-size: 25px;
+}
+
+.bemForm__item:hover {
+  background-color: blue;
+  font-size: 30px;
+}
+
+.bemForm__boton {
+  font-size: 20px;
+}
+
+.bemForm__boton:hover {
+  font-size: 30px;
+  background-color: blue;
+  color: white;
+}
+
+.bemForm__tamaño {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.carouselExampleIndicators {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=estilosSCSS.css.map */
